@@ -1,0 +1,28 @@
+button{
+    background-color: #FFFFFF;
+    border: 2px solid  #DCA56C;
+    color: #DCA56C;
+    border-radius: 12px;
+    margin-right: 5%;
+    padding: 10px 25px;
+}
+
+button:hover{
+    color:#FFFFFF;
+    background-color: #DCA56C;
+}
+
+button.btn-close{
+    border: none;
+}
+button.btn-close:hover{
+    border: none;
+    background-color: transparent;
+}
+button.btn-close:focus{
+    box-shadow: 0 0 0 0.25rem rgb(220 165 108 / 25%);
+}
+.form-control:focus{
+    border-color: transparent;
+    box-shadow: 0 0 0 0.25rem rgb(220 165 108 / 25%);
+}

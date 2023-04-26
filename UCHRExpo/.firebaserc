@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "uchr-expo": {
+      "hosting": {
+        "UCHRExpo": [
+          "uchr-expo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "uchr-expo"
+  }
+}

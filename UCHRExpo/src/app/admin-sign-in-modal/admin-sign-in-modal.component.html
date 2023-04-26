@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h5 class="modal-title">Admin SignIn</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"  mat-button mat-dialog-close aria-label="Close" ></button>
+</div>
+<div class="modal-body">
+    <label for="adminUser">Username</label>
+    <input type="text" id="adminUser" class="form-control" placeholder="Username" [(ngModel)]="input.Username" [ngModelOptions]="{standalone: true}">
+    <br>
+    <label for="adminPass">Password</label>
+    <input type="password" id="adminPass" class="form-control" placeholder="Password" [(ngModel)]="input.Password" [ngModelOptions]="{standalone: true}">
+    <br>
+</div>
+<div class="modal-footer">
+    <button type="button" mat-button mat-dialog-close data-bs-dismiss="modal" >Cancel</button>
+    <button type="button" mat-button mat-dialog-close data-bs-dismiss="modal" (click)="onClick()" >Sign In</button>
+    
+</div>
+  <!--<div id="admin-pg" *ngIf="display" [routerLink]="['/admin-page']"> 
+    <router-outlet></router-outlet>
+    </div> -->

@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <h3 class="modal-title">Update exhibition</h3>
+</div>
+<br>
+<div class="modal-body">
+    <label for="expoName">Name  </label>
+    <input style="width: 60%;" type="text" id="expoName" class="form-control" placeholder="Name" [(ngModel)]="input.name" [ngModelOptions]="{standalone: true}">
+    <br>
+    <br>
+    <label for="expoDate">Date    <label>
+    <input style="width: 15%; margin-left: 5%" type="text" id="expoDay" class="form-control" placeholder="Day" [(ngModel)]="input.day" [ngModelOptions]="{standalone: true}">
+    <input style="width: 15%; margin-left: 3%" type="text" id="expoMonth" class="form-control" placeholder="Month" [(ngModel)]="input.month" [ngModelOptions]="{standalone: true}">
+    <input style="width: 15%; margin-left: 3%" type="text" id="expoYear" class="form-control" placeholder="Year" [(ngModel)]="input.year" [ngModelOptions]="{standalone: true}">
+<br>
+<br>
+<div class="modal-footer">
+    <button type="button" mat-button mat-dialog-close data-bs-dismiss="modal" >Cancel</button>
+    <button style="margin-left: 2%;" type="button" mat-button mat-dialog-close data-bs-dismiss="modal" (click)="onClick()" >Update</button>    
+</div>
+
+

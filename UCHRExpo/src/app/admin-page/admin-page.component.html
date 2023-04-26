@@ -1,0 +1,30 @@
+<header>
+</header>
+
+<body>
+    <div class="ellipse1">
+        <p role="button" class="addExpo" (click)="openExpoModal()">Update Expo</p>
+    </div>
+    
+    <div class="row">
+        <div class="ellipse2">
+            <div class="column" style="width: 30%; margin-top: 15%; margin-left: 50%;">
+                <h1 style="text-align: center">Dogs</h1>
+            <hr class="solid" style="color: black; background-color: black;">
+            <div *ngFor="let participant of participants">
+              <p class="dogName" role="button" (click)="onClick(participant)">{{participant.dog_name}}</p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="column"style="width: 65%;" >
+            <div *ngIf="dog">
+            <app-participant-details [data]="dog"></app-participant-details>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+</footer>

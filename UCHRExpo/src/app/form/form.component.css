@@ -1,0 +1,166 @@
+.column {
+    float: left;
+    width: 230px;
+    margin: 1%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+  }
+
+body{
+    background-color: #f8f8f6;
+}
+
+div.rectangle1{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #DCA56C;
+}
+
+div.rectangle2{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    left: 15%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+}
+
+div.ellipse1{
+    position: absolute;
+    width: 86px;
+    height: 83px;
+    left: -4%;
+    top: 10%;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+div.ellipse2{
+    position: absolute;
+    width: 86px;
+    height: 83px;
+    left: -4%;
+    top: 40%;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+div.ellipse3{
+    position: absolute;
+    width: 86px;
+    height: 83px;
+    left: -4%;
+    top: 70%;
+    background: #FFFFFF;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+p.nrCerc{
+    margin-top: 23%;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+div.textCerc1{
+    position: absolute;
+    width: 199px;
+    height: 109px;
+    left: 64px;
+    top: 10%;
+    /*font-family: Spartan;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* or 133% */
+    color: #000000;
+}
+
+div.textCerc2{
+    position: absolute;
+    width: 199px;
+    height: 109px;
+    left: 64px;
+    top: 45%;
+    /*font-family: Spartan;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* or 133% */
+    color: #000000;
+}
+
+div.textCerc3{
+    position: absolute;
+    width: 199px;
+    height: 109px;
+    left: 64px;
+    top: 70%;
+    /*font-family: Spartan;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* or 133% */
+    color: #000000;
+}
+
+form{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+input{
+    width: 50%;
+}
+
+button{
+    background-color: #FFFFFF;
+    border: 2px solid  #DCA56C;
+    color: #DCA56C;
+    border-radius: 12px;
+    margin-right: 5%;
+    padding: 10px 25px;
+}
+
+button:hover{
+    color:#FFFFFF;
+    background-color: #DCA56C;
+}
+
+.adminButton{
+    background-color: #FFFFFF;
+    border: 2px solid  #DCA56C;
+    color: #DCA56C;
+    border-radius: 12px;
+    margin-right: 5%;
+    padding: 10px 25px;
+}
+.adminButton:hover{
+    color:#FFFFFF;
+    background-color: #DCA56C;
+}
+
+.form-control:focus{
+    border-color: transparent;
+    box-shadow: 0 0 0 0.25rem rgb(220 165 108 / 25%);
+}
+
+.exhibitionName{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* or 133% */
+    color: #000000;
+}

@@ -1,0 +1,83 @@
+<header>
+</header>
+
+<body>
+  <div *ngIf="data">
+  <mat-card style="background-color: white;">
+    <mat-card-header>
+      <mat-card-title>{{data.dog_name}}</mat-card-title>
+      <mat-card-subtitle>{{data.breed}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{data.dog_picture}}" alt="Photo of a dog">
+    <mat-card-content>
+      <p> <b>Owner: </b> {{data.first_name}} {{data.last_name}}</p>
+      <p> <b>Dog age:</b> {{data.age}}</p>
+      <p><b>Dog gender:</b> {{data.gender}}</p>
+      <p><b>Microchip:</b> {{data.microchip}}</p>
+      <a href="{{data.fee_confirmation}}">Fee confirmation document</a>
+    </mat-card-content>
+  </mat-card>
+  </div>
+
+  
+  
+    <!--<div *ngIf="data" style="background-color: white;">
+        <div class="column" style="background-color: white;">
+            <h2 style="background-color: #DCA56C;">infos</h2>
+            <table >
+                <tr>
+                    <td>First name: </td>
+                  <td>{{data.first_name}}</td>
+                </tr>
+                <tr>
+                    <td>Last name: </td>
+                  <td>{{data.last_name}}</td>
+                </tr>
+                <tr>
+                    <td>Dog name: </td>
+                  <td>{{data.dog_name}}</td>
+                </tr>
+                <tr>
+                    <td>Dog age: </td>
+                  <td>{{data.age}}</td>
+                </tr>
+                <tr>
+                    <td>Dog gender: </td>
+                  <td>{{data.gender}}</td>
+                </tr>
+                <tr>
+                    <td>Breed: </td>
+                  <td>{{data.breed}}</td>
+                </tr>
+                <tr>
+                    <td>Microchip: </td>
+                    <td>{{data.microchip}}</td>
+                </tr>
+              </table>
+        </div>
+        <div class="column" style="background-color: white;">
+            <h2 style="background-color: #DCA56C;">photo</h2>
+            <table>
+                <tr>
+                <img src="{{data.dog_picture}}">
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="column" style="background-color: white;">
+            <h2 style="background-color: #DCA56C;">fee confirmation</h2>
+            <div *ngIf="data.fee_confirmation!=' '">
+                <a href="{{data.fee_confirmation}}">Fee confirmation document</a>
+           </div>
+        </div>
+        
+        
+        
+    </div>
+    -->
+
+
+</body>
+
+<footer>
+</footer>
