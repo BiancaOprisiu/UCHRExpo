@@ -23,7 +23,7 @@ export class AdminService {
   
   constructor(public angularfirestore: AngularFirestore, public afAuth: AngularFireAuth) {
     this.adminsCollection = this.angularfirestore.collection('Admin');
-    
+    this.exposCollection = this.angularfirestore.collection('Exhibition');
   }
   getUsernameForId(id : String){
     this.admins.subscribe((a)=> {
@@ -57,34 +57,8 @@ export class AdminService {
 
   async updateExpo(input: Exhibition)
   {
-    console.log(input);
-
-    
-
-    const ref=this.db.doc('ZnjYui1gkBlqPuW6i981');
-    ref.update({name: input.name,
-      day: input.day,
-      month: input.month,
-      year: input.year});
-
-    ref.delete();
-
-    await this.exposCollection.doc('ZnjYui1gkBlqPuW6i981').update(input)
-
-
-    const expo1 = this.exposCollection.doc('ZnjYui1gkBlqPuW6i981');
-    await expo1.update(
-      {
-        name: input.name,
-      day: input.day,
-      month: input.month,
-      year: input.year
-      }
-    )
-
-
-    
-  
+    this.exposCollection.doc('ZnjYui1gkBlqPuW6i981').update(input);
+    alert('Exhibition updated successfully');
   }
 
   getAdminByUsername(){
